@@ -1,10 +1,10 @@
 h1 {
   font-family: Roboto, sans-serif;
-  color: red;
+  color: black;
 }
 
 p {
-  color: yellow;
+  color: black;
 }
 
 body {
@@ -19,6 +19,8 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .logo,
@@ -27,13 +29,37 @@ body {
 }
 
 .logo {
-  padding: 40px 0;
-  margin-right: 63%;
+  position: relative;
+  padding: 40px 0 40px 44px;
+  padding-left: 44px;
+  font: bold 24px/31px pt_serifbold, arial, helvetica, sans-serif;
+}
+
+.logo__circle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.logo__circle_color_dark-blue {
+  background: #0056ec;
+}
+
+.logo__circle_color_blue {
+  left: 8px;
+  top: 56%;
+  background: #c8dbfb;
 }
 
 .menu {
   display: flex;
   align-items: center;
+  font-family: robotoregular, arial, helvetica, sans-serif;
 }
 
 .menu__item {
