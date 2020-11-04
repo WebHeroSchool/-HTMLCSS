@@ -129,20 +129,34 @@ body {
   font: 22px/24px 'robotoregular', arial, helvetica, sans-serif;
 }
 
-.main__button {
-  display: block;
+@keyframes bouncing {
+  0% {
+    bottom: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  100% {
+    bottom: 50px;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.1);
+  }
+}
+
+  .main__button {
+    display: block;
   font: 0.9vw 'robotoregular', arial, helvetica, sans-serif;
   letter-spacing: 0.4px;
   color: #fff;
+  cursor: pointer;
   background: #0056ec;
+  position: relative;
   padding: 17px 27px;
+  vertical-align: top;
+  margin-top: 50px;
   border-radius: 5px;
   border: none;
-  transition: opacity 0.5s;
-}
-
-.main__button:hover {
-  opacity: 0.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
 }
 
 @media (max-width: 1366px) {
