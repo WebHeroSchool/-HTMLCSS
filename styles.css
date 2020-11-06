@@ -86,7 +86,7 @@ body {
 }
 
 .menu__item::after {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   display: block;
   content: '';
@@ -143,7 +143,7 @@ body {
 
 .main__button {
   display: block;
-  font: 0.9vw 'robotoregular', arial, helvetica, sans-serif;
+  font: 500 18px/18px 'robotoregular', arial, helvetica, sans-serif;
   letter-spacing: 0.4px;
   color: #fff;
   cursor: pointer;
@@ -155,7 +155,6 @@ body {
   border-radius: 5px;
   border: none;
   text-decoration: none;
-  text-transform: uppercase;
   animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate both;
 }
 
@@ -182,7 +181,7 @@ body {
 
   .main {
     padding: 7.3% 56% 0 0;
-    background-size: 55% 126%;
+    background-size: 55% 121%;
   }
 
   .header {
@@ -190,8 +189,9 @@ body {
   }
 
   .main__title {
+    margin: 0 0 37px 0;
     font: bold 50px/65px 'pt_serifbold', arial, helvetica, sans-serif;
-    line-height: 4.6vw;
+    line-height: 4.7vw;
   }
 
   .main__subtitle {
@@ -201,8 +201,9 @@ body {
   }
 
   .main__button {
-    letter-spacing: 0.7px;
-    padding: 15px 22px;
+    font: 500 12px/14px 'robotoregular', arial, helvetica, sans-serif;
+    letter-spacing: 0.9px;
+    padding: 15px 19px;
   }
 }
 
@@ -212,7 +213,7 @@ body {
   }
 
   .header {
-    margin-bottom: 2.7vw;
+    margin-bottom: 2.2vw;
   }
 
   .logo {
@@ -220,7 +221,7 @@ body {
   }
 
   .menu__item {
-    padding: 7.8px;
+    padding: 0 7.8px;
     font: 1.4vw 'robotoregular', arial, sans-serif;
   }
 
@@ -238,6 +239,7 @@ body {
 
   .main__title {
     line-height: 6.3vw;
+    margin: 0 0 45px 0;
   }
 
   .main__subtitle {
@@ -247,8 +249,9 @@ body {
   }
 
   .main__button {
-    letter-spacing: 1.7px;
-    padding: 16px 28px;
+    font: 500 11px/16px 'robotoregular', arial, helvetica, sans-serif;
+    letter-spacing: 1.6px;
+    padding: 16px 17px;
   }
 }
 
